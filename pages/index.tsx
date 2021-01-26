@@ -6,10 +6,11 @@ import { PostType } from '../store/types';
 
 import Link from 'next/link';
 import Layout from '../components/layout';
-import Title from '../components/Title/Title';
 import Container from '../components/Container/Container';
 import BlogWrap from '../components/BlogWrap/BlogWrap';
+import Title from '../components/Title/Title';
 import Post from '../components/Post/Post';
+import Spinner from '../components/Spinner/styledSpinner';
 
 const Home: FC = () => {
   const { posts, isLoading } = useSelector((state) => state);
@@ -21,13 +22,13 @@ const Home: FC = () => {
 
   return (
     <Layout>
-      <section>
-        <Container>
-          <Title title={siteTitle}></Title>
-        </Container>
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <>
+          <Container>
+            <Title title={siteTitle}></Title>
+          </Container>
           <BlogWrap>
             {posts.map((item: PostType) => (
               <Link key={item.id} href={`/posts/${item.id}`} passHref>
@@ -35,8 +36,8 @@ const Home: FC = () => {
               </Link>
             ))}
           </BlogWrap>
-        )}
-      </section>
+        </>
+      )}
     </Layout>
   );
 };
