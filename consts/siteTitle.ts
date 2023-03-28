@@ -1,1 +1,1 @@
-export const siteTitle: string = 'Blog Develop Today'
+export const siteTitle = 'Minimalist blog';
