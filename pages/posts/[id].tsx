@@ -11,7 +11,6 @@ const PostPage: FC = () => {
   const { posts } = useSelector((state) => state);
   const route = useRouter();
   const post = posts.filter((item: PostType) => item.id == route.query.id)[0];
-  console.log(post);
 
   return (
     <Layout>

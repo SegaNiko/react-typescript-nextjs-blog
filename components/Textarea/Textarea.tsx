@@ -3,10 +3,10 @@ import React, { ChangeEvent, FC } from 'react';
 import TextareaStyle from './styledTextarea';
 
 interface propsTextarea {
-    type: string;
-    placeholder: string;
-    value: string;
-    onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  type: string;
+  placeholder: string;
+  value: string;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Textarea: FC<propsTextarea> = ({ type, placeholder, onChange, value }) => {

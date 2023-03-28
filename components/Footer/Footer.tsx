@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import FooterStyle from "./styleFooter";
+import FooterStyle from './styleFooter';
 
-const Footer:FC = ({ children }) => {
+const Footer: FC = ({ children }) => {
   return <FooterStyle>{children}</FooterStyle>;
 };
 export default Footer;

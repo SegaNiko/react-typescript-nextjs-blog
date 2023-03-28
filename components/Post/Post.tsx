@@ -9,12 +9,12 @@ import Button from '../Button/Button';
 import { blogAPI } from '../../api/api';
 
 export interface PostProps {
-    href?: string;
-    isSingle?: boolean;
-    title: string;
-    body: string;
-    id?: string;
-    onClick?: (event: React.MouseEvent<Element, MouseEvent>) => void;
+  href?: string;
+  isSingle?: boolean;
+  title: string;
+  body: string;
+  id?: string;
+  onClick?: (event: React.MouseEvent<Element, MouseEvent>) => void;
 }
 
 const Post: FC<PostProps> = forwardRef(({ href, onClick, isSingle, title, body, id }, ref) => {

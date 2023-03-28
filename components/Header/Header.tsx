@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import HeaderStyle from "./styleHeader";
+import HeaderStyle from './styleHeader';
 
-const Header:FC = ({ children }) => {
+const Header: FC = ({ children }) => {
   return <HeaderStyle>{children}</HeaderStyle>;
 };
 export default Header;

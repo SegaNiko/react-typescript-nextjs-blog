@@ -2,6 +2,7 @@ html {
   height: 100%;
 
 }
+
 body {
   margin: 0 auto;
   padding: 0 auto;
@@ -14,20 +15,22 @@ body {
 * {
   box-sizing: border-box;
 }
+
 a{
   color: black;
   text-decoration: none;
 }
+
 a:hover {
   color: rgb(56, 55, 55)
 }
-
 
 #__next {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 main {
   display: flex;
   justify-content: center;

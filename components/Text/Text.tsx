@@ -1,12 +1,12 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import TextStyle from "./styleText";
+import TextStyle from './styleText';
 
 interface TextProp {
-  text: string
+  text: string;
 }
 
-const Text : FC<TextProp>  = ( {text} ) => {
+const Text: FC<TextProp> = ({ text }) => {
   return <TextStyle>{text}</TextStyle>;
 };
 export default Text;

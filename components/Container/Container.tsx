@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import ContainerStyle from "./styleContainer";
+import ContainerStyle from './styleContainer';
 
-const Container : FC = ( {children} ) => {
+const Container: FC = ({ children }) => {
   return <ContainerStyle>{children}</ContainerStyle>;
 };
 

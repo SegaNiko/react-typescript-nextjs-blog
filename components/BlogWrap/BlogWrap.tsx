@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import BlogWrapStyle from "./styleBlogWrap";
+import BlogWrapStyle from './styleBlogWrap';
 
-const BlogWrap : FC = ({ children }) => {
+const BlogWrap: FC = ({ children }) => {
   return <BlogWrapStyle>{children}</BlogWrapStyle>;
 };
 export default BlogWrap;
