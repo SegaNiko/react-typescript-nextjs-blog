@@ -10,14 +10,14 @@ const Layout: FC = ({ children }) => {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="" />
+        <link rel='icon' href='/favicon.ico' />
+        <meta name='description' content='' />
         <title>{siteTitle}</title>
       </Head>
 
       <Header>
-        <Link href="/">Home</Link>
-        <Link href="/posts/new">Create new post</Link>
+        <Link href='/'>Home</Link>
+        <Link href='/posts/new'>Create new post</Link>
       </Header>
       <main>{children}</main>
       <Footer>

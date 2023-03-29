@@ -18,6 +18,7 @@ const InputStyle = styled.input.attrs((props: InputProps) => ({
   ::placeholder {
     color: black;
   }
+
   :focus {
     border-bottom: 2px solid whitesmoke;
   }

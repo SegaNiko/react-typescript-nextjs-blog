@@ -13,7 +13,7 @@ import Post from '../components/Post/Post';
 import Spinner from '../components/Spinner/styledSpinner';
 
 const Home: FC = () => {
-  const { posts, isLoading } = useSelector((state) => state);
+  const { posts, isLoading } = useSelector(state => state);
   const dispatch = useDispatch();
 
   useEffect(() => {

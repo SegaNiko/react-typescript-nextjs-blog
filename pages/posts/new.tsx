@@ -33,11 +33,11 @@ const NewPost: FC = () => {
     <>
       <Layout>
         <Container>
-          <Title title="Send your post please"></Title>
+          <Title title='Send your post please'></Title>
         </Container>
         <NewPostWrap>
-          <Input placeholder="Title" onChange={handleChangeTitle} value={title} />
-          <Textarea type="textarea" placeholder="Text" onChange={handleChangeText} value={title} />
+          <Input placeholder='Title' onChange={handleChangeTitle} value={title} />
+          <Textarea type='textarea' placeholder='Text' onChange={handleChangeText} value={title} />
           <Button onClick={createNewPost} disabled={isDisabled}>
             Submit
           </Button>

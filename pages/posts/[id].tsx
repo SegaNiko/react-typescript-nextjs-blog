@@ -8,7 +8,7 @@ import Post from '../../components/Post/Post';
 import BlogWrap from '../../components/BlogWrap/BlogWrap';
 
 const PostPage: FC = () => {
-  const { posts } = useSelector((state) => state);
+  const { posts } = useSelector(state => state);
   const route = useRouter();
   const post = posts.filter((item: PostType) => item.id == route.query.id)[0];
 

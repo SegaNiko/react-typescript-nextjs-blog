@@ -24,7 +24,6 @@ const Post: FC<PostProps> = forwardRef(({ href, onClick, isSingle, title, body, 
     e.preventDefault();
     blogAPI.deletePost(id).finally(() => router.push('/'));
   };
-  console.log('DELETE POST ID', id);
 
   return (
     <PostStyle ref={ref} href={href} isSingle={isSingle} onClick={onClick}>
