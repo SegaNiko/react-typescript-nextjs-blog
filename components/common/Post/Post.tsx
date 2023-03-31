@@ -3,10 +3,10 @@ import { FC, forwardRef } from 'react';
 import { useRouter } from 'next/router';
 
 import PostStyle from './stylePost';
-import Title from '../Title/Title';
-import Text from '../Text/Text';
-import Button from '../Button/Button';
-import { blogAPI } from '../../api/api';
+import Title from '../../ui-kit/Title/Title';
+import Text from '../../ui-kit/Text/Text';
+import Button from '../../ui-kit/Button/Button';
+import { blogAPI } from '../../../api/api';
 
 export interface PostProps {
   href?: string;

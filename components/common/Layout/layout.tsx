@@ -2,9 +2,9 @@ import { FC } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import { siteTitle } from '../consts/siteTitle';
+import Header from '../../ui-kit/Header/Header';
+import Footer from '../Footer/Footer';
+import { siteTitle } from '../../../consts/siteTitle';
 
 const Layout: FC = ({ children }) => {
   return (

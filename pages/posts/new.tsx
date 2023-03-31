@@ -1,13 +1,13 @@
 import { ChangeEvent, FC, useState } from 'react';
 import { blogAPI } from '../../api/api';
 
-import Layout from '../../components/layout';
-import Container from '../../components/Container/Container';
+import Layout from '../../components/common/Layout/layout';
+import Container from '../../components/ui-kit/Container/Container';
 import NewPostWrap from '../../components/NewPostWrap/NewPostWrap';
-import Input from '../../components/Input/Input';
-import Textarea from '../../components/Textarea/Textarea';
-import Title from '../../components/Title/Title';
-import Button from '../../components/Button/Button';
+import Input from '../../components/form/Input/Input';
+import Textarea from '../../components/form/Textarea/Textarea';
+import Title from '../../components/ui-kit/Title/Title';
+import Button from '../../components/ui-kit/Button/Button';
 
 const NewPost: FC = () => {
   const [title, setTitle] = useState('');

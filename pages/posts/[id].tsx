@@ -3,9 +3,9 @@ import { useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
 import { PostType } from '../../store/types';
 
-import Layout from '../../components/layout';
-import Post from '../../components/Post/Post';
-import BlogWrap from '../../components/BlogWrap/BlogWrap';
+import Layout from '../../components/common/Layout/layout';
+import Post from '../../components/common/Post/Post';
+import BlogWrap from '../../components/common/BlogWrap/BlogWrap';
 
 const PostPage: FC = () => {
   const { posts } = useSelector(state => state);

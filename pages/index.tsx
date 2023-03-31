@@ -5,12 +5,12 @@ import { fetchPosts } from '../store/actions';
 import { PostType } from '../store/types';
 
 import Link from 'next/link';
-import Layout from '../components/layout';
-import Container from '../components/Container/Container';
-import BlogWrap from '../components/BlogWrap/BlogWrap';
-import Title from '../components/Title/Title';
-import Post from '../components/Post/Post';
-import Spinner from '../components/Spinner/styledSpinner';
+import Layout from '../components/common/Layout/layout';
+import Container from '../components/ui-kit/Container/Container';
+import BlogWrap from '../components/common/BlogWrap/BlogWrap';
+import Title from '../components/ui-kit/Title/Title';
+import Post from '../components/common/Post/Post';
+import Spinner from '../components/common/Spinner/styledSpinner';
 
 const Home: FC = () => {
   const { posts, isLoading } = useSelector(state => state);
