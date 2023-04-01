@@ -3,7 +3,7 @@ import { blogAPI } from '../../api/api';
 
 import Layout from '../../components/common/Layout/layout';
 import Container from '../../components/ui-kit/Container/Container';
-import NewPostWrap from '../../components/NewPostWrap/NewPostWrap';
+import NewPostWrap from '../../components/common/NewPostWrap/NewPostWrap';
 import Input from '../../components/form/Input/Input';
 import Textarea from '../../components/form/Textarea/Textarea';
 import Title from '../../components/ui-kit/Title/Title';
